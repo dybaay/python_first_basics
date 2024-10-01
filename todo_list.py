@@ -2,8 +2,8 @@ todo_list = []
 
 def formatResult(todo_list):
     formatted = ""
-    for item in todo_list:
-        formatted += item+"\n"
+    for index, item in enumerate(todo_list):
+        formatted += str(int(index) + 1) + ". "+ item.title()+"\n"
     return formatted
     
     
